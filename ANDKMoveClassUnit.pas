@@ -3,9 +3,7 @@ unit ANDKMoveClassUnit;
 interface
 
 uses Sysutils, Registry, windows, classes;
-type
-    TCMDOutput = procedure(str: string);
-    TGetCMDInput = procedure(var inputText: string);
+
 
 function dirNDK(): Integer;
 function findNDKInReg(RootKey: HKEY; Path: string): integer;
